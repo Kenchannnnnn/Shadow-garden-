@@ -4,70 +4,49 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>シャドウ・ガーデン | Shadow Garden</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700;900&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#08060f;color:#fff;overflow-x:hidden}
-a{text-decoration:none}
-.hero{
-  position:relative;
-  min-height:92vh;
-  background: url('https://i.pinimg.com/736x/2d/1b/8a/2d1b8a8a3d9f8c9a7b1e0e1a2b3c4d5e6f7a8b9c.jpg') center/cover no-repeat;
-  display:flex;align-items:center;justify-content:center;text-align:center;
-}
-.hero::before{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(180deg, rgba(8,6,15,0.2) 0%, rgba(8,6,15,0.75) 60%, #08060f 100%),
-             linear-gradient(90deg, rgba(88,28,135,0.6), rgba(30,10,60,0.6));
-}
-.hero-content{position:relative;z-index:2;padding:40px 20px;max-width:900px}
-.badge-jp{
-  display:inline-block;background:rgba(168,85,247,0.2);border:1px solid #a855f7;
-  padding:6px 18px;border-radius:999px;font-family:'Noto Sans JP',sans-serif;
-  letter-spacing:2px;font-weight:700;color:#e9d5ff;margin-bottom:16px;backdrop-filter:blur(10px)
-}
-h1{font-size:clamp(40px,8vw,72px);font-weight:800;line-height:1.05;
-  background:linear-gradient(90deg,#fff,#c084fc,#f0abfc);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-h1 span{font-family:'Noto Sans JP',sans-serif}
-.desc{margin:18px auto 28px;max-width:700px;color:#d8b4fe;font-size:17px;line-height:1.7}
-.stats{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
-.stat{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(12px);
-  padding:10px 18px;border-radius:999px;font-weight:600;font-size:14px}
-.dot{color:#4ade80}
-.btn{
-  display:inline-block;padding:15px 32px;border-radius:999px;font-weight:700;font-size:16px;
-  transition:.3s;cursor:pointer;border:none
-}
-.btn-purple{background:linear-gradient(90deg,#7c3aed,#a855f7);color:white;box-shadow:0 8px 30px rgba(168,85,247,0.5)}
-.btn-purple:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(168,85,247,0.7)}
-.btn-ghost{background:rgba(255,255,255,0.1);color:white;border:1px solid rgba(255,255,255,0.2);margin-left:10px}
-section{padding:70px 20px;max-width:1100px;margin:auto}
-.sec-title{text-align:center;margin-bottom:40px}
-.sec-title h2{font-size:32px;font-weight:800}
-.sec-title p{color:#a78bfa}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card{
-  background:#120b24;border:1px solid #2a1a4a;border-radius:20px;padding:28px;
-  transition:.3s
-}
-.card:hover{transform:translateY(-6px);border-color:#a855f7;box-shadow:0 15px 40px rgba(124,58,237,0.25)}
-.card h3{color:#c084fc;margin-bottom:10px;font-size:20px}
-.card p{color:#cbd5e1;font-size:15px;line-height:1.6}
-.banner-img{width:100%;border-radius:20px;margin-top:20px;border:1px solid #3b2a6b}
-.cta{
-  text-align:center;background:linear-gradient(135deg,#4c1d95,#7c3aed);
-  border-radius:24px;padding:50px 30px;margin:20px
-}
-footer{text-align:center;padding:30px;color:#8b7ab8;font-size:14px;border-top:1px solid #1e1533;margin-top:40px}
+body{font-family:'Poppins',sans-serif;background:#08060f;color:#fff}
+.hero{position:relative;min-height:100vh;background:url('fd40ec754ca08bd9b1cea57343f2c143.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg, rgba(8,6,15,0.2) 0%, rgba(8,6,15,0.85) 75%, #08060f 100%),linear-gradient(90deg, rgba(88,28,135,0.45), rgba(30,10,60,0.45))}
+.hero-content{position:relative;z-index:2;padding:40px 20px;max-width:850px}
+.badge{display:inline-block;background:rgba(168,85,247,0.25);border:1px solid #a855f7;padding:7px 20px;border-radius:999px;font-family:'Noto Sans JP';letter-spacing:2px;color:#fff;margin-bottom:18px;font-weight:700}
+h1{font-size:48px;font-weight:800}
+.desc{margin:16px auto 24px;max-width:650px;color:#f3e8ff;line-height:1.7}
+.stats{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+.stat{background:rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.25);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:600}
+.btn{display:inline-block;padding:15px 32px;border-radius:999px;font-weight:700;background:linear-gradient(90deg,#7c3aed,#a855f7);color:white}
+section{padding:60px 20px;max-width:1000px;margin:auto;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:30px;text-align:left}
+.card{background:#120b24;border:1px solid #2a1a4a;border-radius:18px;padding:22px}
+.card h3{color:#c084fc;margin-bottom:8px}
+footer{text-align:center;padding:25px;color:#8b7ab8;border-top:1px solid #1e1533}
 </style>
 </head>
 <body>
-
 <div class="hero">
-  <div class="hero-content">
-    <div class="badge-jp">シャドウ・ガーデン 🏛️</div>
-    <h1>Selamat Datang di<br><span>Shadow Garden</span></h1>
-    <p class="desc>Selamat datang di shadow garden ✨ Komunitas belajar bahasa Jepang yang aktif, terstruktur, dan suportif — tempat setiap anggota bisa berkembang dari pemula hingga mampu menggunakan bahasa Jepang secara nyata.</p>
-    
-    <div class="stats">
-      
+<div class="hero-content">
+<div class="badge">陰の実力者になりたくて！</div>
+<h1>Shadow Garden</h1>
+<p class="desc">Selamat datang di shadow garden ✨ Komunitas belajar bahasa Jepang yang aktif, terstruktur, dan suportif.</p>
+<div class="stats">
+<div class="stat">🏛️ Community Server</div>
+<div class="stat">🟢 38 Online</div>
+<div class="stat">👥 220 Members</div>
+</div>
+<a href="#" class="btn">Join Discord Server</a>
+</div>
+</div>
+<section>
+<h2>Belajar Jepang Jadi Gak Sendirian</h2>
+<p>Struktur jelas, mentor aktif, dan komunitas suportif.</p>
+<div class="grid">
+<div class="card"><h3>📚 Materi Terstruktur</h3><p>Dari N5 dasar sampai N3.</p></div>
+<div class="card"><h3>🗣️ Practice Room</h3><p>Latihan speaking tiap minggu.</p></div>
+<div class="card"><h3>🎌 Event Anime</h3><p>Nobar, kuis, dan event seru.</p></div>
+</div>
+</section>
+<footer>© 2026 Shadow Garden (シャドウ・ガーデン)</footer>
+</body>
+</html>
