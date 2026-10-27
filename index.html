@@ -3,45 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shadow Garden - Komunitas Belajar Bahasa Jepang</title>
+<title>Shadow Garden</title>
 <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
-  body {
-    background: #1a0f2e;
-    color: #f3e8ff;
-    min-height: 100vh;
-    background-image:
-      radial-gradient(circle at 20% 20%, rgba(139,92,246,0.15) 0%, transparent 50%),
-      radial-gradient(circle at 80% 80%, rgba(167,139,250,0.1) 0%, transparent 50%),
-      linear-gradient(180deg, #1a0f2e 0%, #2d1b4e 100%);
-  }
-  .container { max-width: 720px; margin: 0 auto; padding: 24px 20px 60px; }
-  .hidden { display: none !important; }
-  .page { animation: fadeIn 0.35s ease; }
-  @keyframes fadeIn { from { opacity:0; transform: translateY(10px);} to { opacity:1; transform: translateY(0);} }
-  .hero { text-align:center; padding: 40px 10px 30px; }
-  .hero h1 { font-size: 28px; font-weight: 800; margin-bottom: 16px; line-height:1.3; }
-  .hero p { color: #c4b5fd; line-height:1.7; font-size: 16px; max-width: 600px; margin: 0 auto 24px; }
-  .badge {
-    display:inline-block; background: rgba(139,92,246,0.2); border:1px solid rgba(139,92,246,0.4);
-    padding: 6px 14px; border-radius: 20px; font-size: 13px; color: #ddd6fe; margin-bottom: 18px;
-  }
-  .section-title { text-align:center; font-size: 24px; font-weight: 800; margin: 30px 0 20px; }
-  .card-list { display:flex; flex-direction:column; gap:14px; }
-  .card {
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 16px;
-    padding: 18px;
-    display:flex; gap:16px; align-items:flex-start;
-    cursor:pointer; transition: all 0.2s;
-    backdrop-filter: blur(8px);
-  }
-  .card:hover { background: rgba(139,92,246,0.15); border-color: rgba(139,92,246,0.4); transform: translateY(-2px); }
-  .card-icon {
-    width: 52px; height: 52px; min-width:52px; border-radius: 12px;
-    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
-    display:flex; align-items:center; justify-content:center; font-size:26px;
-  }
-  .card h3 { font-size: 17px; margin-bottom:6px; }
-  .card p { font-size: 14px; color: #c4
+  body { background:#1a0f2e; color:#f3e8ff; font-family: system-ui, sans-serif; margin:0; padding:20px; }
+  .container { max-width:700px; margin:0 auto; }
+  h1 { text-align:center; }
+  .desc { text-align:center; color:#c4b5fd; line-height:1.6; }
+  .card { background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:14px; padding:16px; margin:12px 0; }
+  .card h3 { margin:0 0 6px 0; }
+  .card p { margin:0; color:#c4b5fd; }
+  .btn { display:block; text-align:center; background:#7c3aed; color:white; padding:15px; border-radius:12px; text-decoration:none; font-weight:bold; margin-top:20px; }
+  .detail { background:rgba(255,255,255,0.05); border-radius:12px; padding:15px; margin:10px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>🏠 シャドウ・ガーデン 🏛️</h1>
+  <p class="desc">Selamat datang di shadow garden. Komunitas belajar bahasa Jepang yang aktif, terstruktur, dan suportif.</p>
+
+  <h2 style="text-align:center;">Di Shadow Garden ada apa aja sih?</h2>
+
+  <div class="card">
+    <h3>1. Panduan Pemula</h3>
+    <p>Langkah awal belajar Jepang dari nol, panduan mudah & ramah pemula</p>
+  </div>
+
+  <div class="card">
+    <h3>2. Seputar Pembelajaran</h3>
+    <p>Tips, Q&A, dan diskusi metode belajar bersama</p>
+  </div>
+
+  <div class="card">
+    <h3>3. Kumpulan Materi Lengkap</h3>
+    <p>Grammar, kosakata, kanji, dan sumber belajar lengkap terorganisir</p>
+  </div>
+
+  <div class="card">
+    <h3>4. Tutorial & JP Resources</h3>
+    <p>Tutorial praktis, link resources, dan bahan belajar rekomendasi</p>
+  </div>
+
+  <div class="card">
+    <h3>5. Media Sharing</h3>
+    <p>Bagikan anime, manga, musik, dan media Jepang favoritmu</p>
+  </div>
+
+  <div class="card">
+    <h3>6. Voice Room Belajar</h3>
+    <p>Belajar bareng via voice room, praktik kaiwa santai</p>
+  </div>
+
+  <div class="card">
+    <h3>7. Tempat Bersantai</h3>
+    <p>Chill corner untuk ngobrol santai & perkenalan anggota</p>
+  </div>
+
+  <a class="btn" href="https://discord.gg/shadowgarden">Gabung Discord</a>
+
+  <hr style="margin:30px 0; border-color:rgba(255,255,255,0.2);">
+
+  <h2>Detail Isi:</h2>
+
+  <div class="detail" id="p1">
+    <h3>1. Panduan Pemula</h3>
+    <p>Ini halaman panduan buat pemula banget. Isinya Hiragana, Katakana, Kanji dasar, Tata Bahasa N5.</p>
+  </div>
+
+  <div class="detail" id="p2">
+    <h3>2. Seputar Pembelajaran</h3>
+    <p>Tips belajar, tanya jawab, diskusi metode.</p>
+  </div>
+
+  <div class="detail" id="p3">
+    <h3>3. Kumpulan Materi Lengkap</h3>
+    <p>Materi grammar, kosakata, kanji terorganisir.</p>
+  </div>
+
+  <div class="detail" id="p4">
+    <h3>4. Tutorial & JP Resources</h3>
+    <p>Link tutorial dan resource belajar.</p>
+  </div>
+
+  <div class="detail" id="p5">
+    <h3>5. Media Sharing</h3>
+    <p>Share anime, manga, musik Jepang.</p>
+  </div>
+
+  <div class="detail" id="p6">
+    <h3>6. Voice Room Belajar</h3>
+    <p>Belajar bareng dan praktik ngomong via voice.</p>
+  </div>
+
+  <div class="detail" id="p7">
+    <h3>7. Tempat Bersantai</h3>
+    <p>Buat ngobrol santai dan perkenalan.</p>
+  </div>
+
+</div>
+</body>
+</html>
