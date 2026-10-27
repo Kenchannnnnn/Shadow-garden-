@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+* { font-family: 'Poppins', sans-serif; box-sizing: border-box; }
+body { background: #1a0f2e; color: #f3e8ff; margin: 0; padding: 20px; }
+.container { max-width: 700px; margin: 0 auto; }
+h1 { text-align: center; }
+.desc { text-align: center; color: #c4b5fd; }
+.desc.kecil { font-size: 14px; }
+
+.card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  margin: 12px 0;
+  overflow: hidden;
+}
+.card-btn {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 18px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.card-btn:hover { background: rgba(139,92,246,0.25); }
+.card-desc {
+  display: none;
+  padding: 0 18px 18px 18px;
+  color: #ddd6fe;
+  line-height: 1.6;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.card-desc.show { display: block; }
+.btn-discord {
+  display: block; text-align: center; background: #7c3aed; color: white;
+  padding: 15px; border-radius: 12px; text-decoration: none; font-weight: bold; margin-top: 20px;
+}
