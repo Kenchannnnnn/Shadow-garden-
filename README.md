@@ -1,9 +1,6 @@
 # 🏠 Shadow Garden
 
-Selamat datang di website resmi **Shadow Garden** ✨
-Komunitas belajar bahasa Jepang yang aktif, terstruktur, dan suportif — tempat setiap anggota bisa berkembang dari pemula hingga mampu menggunakan bahasa Jepang secara nyata.
-
-Website live: https://hannnn.github.io
+Repo: https://github.com/Kenchannnn/Shadow-garden-
 
 ## 📖 Tentang
 
@@ -35,3 +32,7 @@ Halaman utama: index.html sebagai menu navigasi.
 ## 🚀 Cara Menjalankan
 
 Website ini static, jadi tidak perlu install apapun.
+
+1. Clone repo ini
+```bash
+git clone https://github.com/Kenchannnn/Shadow-garden-.git
