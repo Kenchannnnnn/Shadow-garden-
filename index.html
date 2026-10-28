@@ -24,5 +24,26 @@
 
   <p class="credit">✨ Credit by Kenchan & Slime ✨</p>
 </div>
+<script>
+const field = document.getElementById('starfield');
+for (let i = 0; i < 150; i++) {
+  let s = document.createElement('div');
+  s.className = 'star';
+  s.style.left = Math.random() * 100 + 'vw';
+  s.style.top = Math.random() * 100 + 'vh';
+  s.style.width = s.style.height = Math.random() * 2 + 1 + 'px';
+  s.style.animationDelay = Math.random() * 3 + 's';
+  field.appendChild(s);
+}
+for (let i = 0; i < 10; i++) {
+  let c = document.createElement('div');
+  c.className = 'comet';
+  c.style.left = Math.random() * 80 + 20 + 'vw';
+  c.style.top = Math.random() * 40 + 'vh';
+  c.style.animationDuration = Math.random() * 2 + 3 + 's';
+  c.style.animationDelay = Math.random() * 6 + 's';
+  field.appendChild(c);
+}
+</script>
 </body>
 </html>
