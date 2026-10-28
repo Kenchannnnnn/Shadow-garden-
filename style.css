@@ -202,7 +202,7 @@ a:hover { text-decoration: underline; }
 @keyframes particleMove { from { background-position:0 0, 0 0, 0 0, 0 0, 0 0; } to { background-position:300px 300px, 300px 300px, 300px 300px, 300px 300px, 300px 300px; } }
 @keyframes fadeIn { from { opacity:0; transform: translateY(10px); } to { opacity:1; transform: translateY(0); } }
 
-/* Starfield + Bintang + Komet */
+/* Starfield + Bintang + Komet - UDAH DIBENERIN EKORNYA */
 .starfield {
   position: fixed;
   inset: 0;
@@ -233,13 +233,13 @@ a:hover { text-decoration: underline; }
 .comet::after {
   content: '';
   position: absolute;
-  top: 3px;
-  left: -150px;
-  width: 150px;
+  top: 50%;
+  left: 4px;
+  width: 130px;
   height: 3px;
-  background: linear-gradient(to left, #cce6ff, transparent);
-  transform: rotate(-25deg);
-  transform-origin: right;
+  background: linear-gradient(to right, #cce6ff, transparent);
+  transform: translateY(-50%) rotate(-35deg);
+  transform-origin: left center;
   border-radius: 2px;
 }
 
@@ -260,4 +260,4 @@ a:hover { text-decoration: underline; }
   .menu-grid { grid-template-columns: 1fr 1fr; gap:10px; }
   .grid-item { padding:14px 8px; font-size:12px; }
   .profile { width:100px; height:100px; }
-    }
+                              }
