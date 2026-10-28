@@ -208,3 +208,6 @@ a:hover { text-decoration: underline; }
   .grid-item { padding:14px 8px; font-size:12px; }
   .profile { width:100px; height:100px; }
   }
+h1, .desc {
+  text-align: center;
+}
