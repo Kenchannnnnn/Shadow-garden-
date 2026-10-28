@@ -211,3 +211,26 @@ a:hover { text-decoration: underline; }
 h1, .desc {
   text-align: center;
 }
+.comet {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 3px #aaccff, 0 0 20px 5px #ffffff;
+  animation: fall linear infinite;
+  z-index: 1;
+}
+
+.comet::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -150px;
+  width: 150px;
+  height: 3px;
+  background: linear-gradient(to left, #cce6ff, transparent);
+  transform: rotate(-25deg);
+  transform-origin: right;
+  border-radius: 2px;
+  }
