@@ -69,9 +69,10 @@ h1 {
   background-clip:text;
   -webkit-text-fill-color:transparent;
   animation: gradientMove 5s ease infinite;
+  text-align: center;
 }
 
-.desc { color:#bbb; margin-bottom:20px; font-size:14px; line-height:1.6; }
+.desc { color:#bbb; margin-bottom:20px; font-size:14px; line-height:1.6; text-align: center; }
 
 .profile {
   width:120px; height:120px;
@@ -201,16 +202,23 @@ a:hover { text-decoration: underline; }
 @keyframes particleMove { from { background-position:0 0, 0 0, 0 0, 0 0, 0 0; } to { background-position:300px 300px, 300px 300px, 300px 300px, 300px 300px, 300px 300px; } }
 @keyframes fadeIn { from { opacity:0; transform: translateY(10px); } to { opacity:1; transform: translateY(0); } }
 
-/* Responsif HP kecil */
-@media (max-width: 480px) {
-  body { padding:15px; }
-  .menu-grid { grid-template-columns: 1fr 1fr; gap:10px; }
-  .grid-item { padding:14px 8px; font-size:12px; }
-  .profile { width:100px; height:100px; }
-  }
-h1, .desc {
-  text-align: center;
+/* Starfield + Bintang + Komet */
+.starfield {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
 }
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
 .comet {
   position: absolute;
   width: 5px;
@@ -219,7 +227,7 @@ h1, .desc {
   border-radius: 50%;
   box-shadow: 0 0 10px 3px #aaccff, 0 0 20px 5px #ffffff;
   animation: fall linear infinite;
-  z-index: 1;
+  z-index: 0;
 }
 
 .comet::after {
@@ -233,4 +241,23 @@ h1, .desc {
   transform: rotate(-25deg);
   transform-origin: right;
   border-radius: 2px;
-  }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+@keyframes fall {
+  0% { transform: translate(0, 0); opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translate(-50vw, 50vh); opacity: 0; }
+}
+
+/* Responsif HP kecil */
+@media (max-width: 480px) {
+  body { padding:15px; }
+  .menu-grid { grid-template-columns: 1fr 1fr; gap:10px; }
+  .grid-item { padding:14px 8px; font-size:12px; }
+  .profile { width:100px; height:100px; }
+    }
